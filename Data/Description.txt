@@ -1,0 +1,14 @@
+This group policy adds specific users to a local group on specific computers.
+
+The USERS of this AD group: @USERGROUP@
+    -- will be added to the @LOCALGROUP@ --
+On the COMPUTERS that @FILTERTEXT@
+
+Jira ticket: @TICKETID@
+Jira link: @JIRALINK@
+
+Date: @DATE@
+Owner: @OWNER@
+
+Technical Note
+When using the Computer Group option in Item-Level-Targeting filter, then we have to set the group name without the domain prefix (ex. "@DOMAIN@\"), otherwise the GPO does not get applied to the computers of the group.
